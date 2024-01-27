@@ -26,3 +26,24 @@ a   - (selector)
 ';' - declaration end
 
 ```
+
+## Box Model
+
+content - padding (top, bottom, right and left) - border(top, bottom, right, left) - margin (top, bottom, right, left)
+
+```
+p{
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px
+}
+
+p{
+    margin: 5px 10px 5px 10px;
+}
+
+p{
+    margin: 5px 10px
+}
+```
