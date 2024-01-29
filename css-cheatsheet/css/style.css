@@ -7,6 +7,43 @@
     padding: 0;
 } */
 
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    color: red;
+}
+
+a:active{
+    color: green;
+}
+
+.button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 5px;
+    border: none;
+}
+
+.button:hover{
+    background: red;
+    color: white;
+}
+
+/*
+clears any floats above it!
+*/
+
+.clr {
+    clear: both;
+}
+
+/* a:visited{
+    color: blue;
+} */
+
 body{
     background-color: #f4f4f4;
     color: #555555;
@@ -70,4 +107,117 @@ body{
     border: 3px dotted lightgray;
     padding: 20px;
     margin: 20px 0;
+}
+
+.categories{
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul{
+    padding: 0px;
+    padding-left: 20px;
+    list-style: square;
+    list-style: none;
+}
+
+.categories li{
+    padding-bottom: 6px;
+    border-bottom: dotted 1px #333;
+    list-style-image: url(../images/check.png);
+}
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display: block;
+}
+
+.my-form input[type="text"], .my-form textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+.block {
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#main-block {
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#side-bar {
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+/* css position static by default */
+
+.p-box {
+    height: 500px;  
+    width: 800px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    background-image: url('../images/bg.jpeg');
+    background-position: 100px 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.p-box h1{
+    top: 250px;
+    position: absolute; /* this will have the positioning of the h1 relative to the parent div block. Absolute means from the top. */
+    left: 250px;
+}
+
+.p-box h2{
+    top: 400px;
+    position: absolute; /* this will have the positioning of the h1 relative to the parent div block. Absolute means from the top. */
+    left: 500px;
+}
+
+.fix-me{
+    position: fixed;
+    top: 400px;
+}
+
+.my-list li:first-child{
+    background: red;
+
+}
+
+.my-list li:last-child{
+    background: blue;
+}
+
+.my-list li:nth-child(3){
+    background: yellow;
+}
+
+.my-list li:nth-child(even){
+    background: yellowgreen;
 }

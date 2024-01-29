@@ -47,3 +47,14 @@ p{
     margin: 5px 10px
 }
 ```
+
+## Positioning in CSS
+```
+- static -> renders the document in the order of the document flow.
+- relative -> the element is positioned in its relative normal position.
+- absolute 
+- fixed
+- initial
+- inherit -> inherit the properties of parent.
+```
+
