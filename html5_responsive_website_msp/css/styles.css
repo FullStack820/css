@@ -85,16 +85,21 @@ footer{
     border-top: #e8491d solid 3px;
 }
 
-section li{
-    display: inline;
+#boxes .box{
+    width: 30%;
     float: left;
-    box-sizing: border-box;
     padding: 10px;
-    width: 33.3%;
+    text-align: center;
 }
 
+#boxes .box img{
+    width: 90px;
+    height: 90px;
+}
+
+
 @media(max-width:600px){
-    section li{
+    #boxes .box{
         width: 100%;
         float: none;
     }
