@@ -58,3 +58,9 @@ p{
 - inherit -> inherit the properties of parent.
 ```
 
+# Order of learning
+- [CSS Cheat Sheet](./css-cheatsheet/)
+- [My Website](./mywebsite/)
+- [HTML5 Responsive Website MSP](./html5_responsive_website_msp/)
+- [HTML5 Responsive Website ACME](./html5_responsive_website_acme/)
+- [CSS FlexBox](./flexbox/)

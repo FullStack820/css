@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container{
+    display: flex;
+    /* this is an important property that decides the axis placement */
+    background-color: #f4f4f4;
+    /* justify-content pertains to main-axis */
+    justify-content: start;
+    /* align-items pertains to cross-axis. */
+    align-items: start;
+    /* flex-wrap belongs to the container */
+    /* flex-wrap: wrap; */
+}
+
+.flex-item{
+    height: 100px;
+    /* width: 100px; */
+    /* flex-basis same as width. if you are specifying neither, then the size will be according to the text. */
+    /* flex-basis: 300px; */
+    /* combining all the properties of flex-grow/flex-shrink/flex-basis is flex:1 0 100px */
+    /* so, they all grow at the same rate and start at 100px */
+    flex: 1 0 0;
+    background-color: #254de4;
+    margin: 10px;
+    color: #ffffff;
+
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item:nth-of-type(1){
+    /* align-self: start; */
+    /* order: 2; */
+    /* the rate at which the boxes can grow relative to eachother. */
+    /* flex-grow: 3;
+    flex-basis: 200px; */
+    /* flex-shrink: 1; */
+
+}
+
+.flex-item:nth-of-type(2){
+    /* align-self: center; */
+    /* order: 1; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 2; */
+}
+
+.flex-item:nth-of-type(3){
+    /* align-self: end; */
+    /* order: 3; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 3; */
+
+}
