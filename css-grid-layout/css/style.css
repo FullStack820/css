@@ -1,0 +1,127 @@
+
+/* all the div's contained within that wrapper */
+.wrapper > div{
+    background-color: #eee;
+    padding: 1em;
+}
+
+.wrapper-1 > div{
+    background-color: #eee;
+    padding: 1em;
+}
+
+.wrapper-2 > div{
+    background-color: #eee;
+    padding: 1em;
+}
+
+.wrapper-3 > div{
+    background-color: #eee;
+    padding: 1em;
+}
+
+/* all div's in the wrapper have a different version of grey */
+.wrapper > div:nth-child(even){
+    background-color: #ddd;
+}
+
+.wrapper-1 > div:nth-child(odd){
+    background-color: #ddd;
+}
+
+.wrapper-2 > div:nth-child(odd){
+    background-color: #ddd;
+}
+
+.wrapper-3 > div:nth-child(odd){
+    background-color: #ddd;
+}
+
+/* working with grids */
+.wrapper{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    /* 
+    grid-column-gap: 1em;
+    grid-row-gap:1em; 
+    */
+    /* same as above */
+    grid-gap: 1em;
+}
+
+.wrapper-1{
+    display: grid;
+    /* recommended approach with fractions */
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.4em;
+
+    grid-auto-rows: 100px;
+    /* you can adjust according to the content */
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.wrapper-2{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1em;
+    /* justify-items/align-items: start, end, center, strech(default) */
+    justify-items: stretch; 
+    align-items: stretch; 
+}
+
+.box1{
+    align-self: start;
+}
+
+.box2{
+    align-self: center;
+}
+
+.box3{
+   justify-self: end;
+}
+
+.wrapper-3{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1em;
+    /* justify-items/align-items: start, end, center, strech(default) */
+    justify-items: stretch; 
+    align-items: stretch; 
+}
+
+.boxx1{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.boxx2{
+    grid-column: 3;
+    grid-row: 1/3;
+}
+
+.boxx3{
+    grid-column: 2/4;
+    grid-row:3;
+}
+
+.boxx4{
+    grid-column: 1;
+    grid-row: 2/4;
+    border: 1px solid #333;
+}
+
+.nested{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-auto-rows: minmax(70px, auto);
+    grid-gap: 1em;
+}
+
+.nested >div{
+    border: #333 1px solid;
+    padding: 1em;
+}

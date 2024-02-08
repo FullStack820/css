@@ -64,3 +64,4 @@ p{
 - [HTML5 Responsive Website MSP](./html5_responsive_website_msp/)
 - [HTML5 Responsive Website ACME](./html5_responsive_website_acme/)
 - [CSS FlexBox](./flexbox/)
+- [CSS GridLayout](./css-grid-layout)

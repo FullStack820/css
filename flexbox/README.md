@@ -9,3 +9,5 @@ CSS3 layout mode that provides easy and clean way to arrange items within a cont
 - Order of elements can be easily changed without editing the source HTML
 
 CSS Grid is another option for alignment, positioning etc.,
+
+Creation of transparency grids - https://www.svgviewer.dev/s/488555/transparency-grid
