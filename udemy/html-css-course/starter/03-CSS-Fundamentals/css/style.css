@@ -1,0 +1,265 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    color: red;
+    border-top: 10px solid #1098ad;
+    position: relative;
+}
+
+.container {
+    width: 800px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
+    /* text-align: center; */
+    /* position: relative; */
+}
+
+.main-header {
+    background-color: #f7f7f7;
+    /* padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px; */
+    padding: 20px 40px;
+    margin-bottom: 40px;
+    height: 80px;
+    /* position: relative; */
+}
+
+nav a:link {
+    /* background-color: orangered; */
+    /* vertical margins are ignored for inline elements */
+    /* margin: 20px;
+    padding: 20px; */
+    /* making it a block element */
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+nav a:link:last-child {
+    margin-right: 0px;
+}
+
+.post-header {
+    margin-bottom: 40px;
+    /* position: relative; */
+}
+
+aside {
+    background-color: #f4f4f4;
+    border-top: 5px solid #1098ad;
+    border-bottom: 5px solid #1098ad;
+    padding: 50px 0;
+    width: 500px;
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+h1 {
+    /* 1 rem = 16 pixels */
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-style: italic;
+    margin: 0;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    color: #1098ad;
+}
+
+p {
+    font-size: 22px;
+    /* 1.5 times the font-size */
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+li {
+    /* spacing between the elements */
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+li:last-child {
+    margin-bottom: 0px;
+}
+
+ul,
+ol {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+/* footer p {
+    font-size: 16px;
+} */
+
+
+/* 
+article header p {
+    font-style: italic;
+}
+*/
+
+#author {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.related-author {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.related-posts {
+    list-style: none;
+}
+
+
+
+/* psuedo classes */
+
+li:first-child {
+    font-weight: bold;
+}
+
+li:last-child {
+    font-style: italic;
+}
+
+/* li:nth-child(odd) {
+    color: red;
+} */
+
+/* selecting the first paragraph in every article */
+/* psuedo classes won't work very well if we mix elements within parent elements. */
+article p:last-child {
+    color: red;
+}
+
+/* Stlying hyperlinks - use pseudo classes (link, visited, hover and active) */
+/* a:link targets only those elements with href attribute set */
+a:link {
+    color: #1098ad;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #1098ad;
+}
+
+a:hover {
+    color: orangered;
+    font-weight: bold;
+    text-decoration: underline dotted orangered;
+}
+
+a:active {
+    background-color: black;
+    font-style: italic;
+}
+
+#copyright {
+    /* color: red; */
+    font-size: 16px;
+}
+
+/* .copyright {
+    color: blue;
+}
+
+.text {
+    color: yellow;
+}
+
+footer p {
+    color: green;
+} */
+
+/* images act like inline-block elements
+   hence width, margins apply to them although
+   they are primarily inline in nature
+*/
+
+.post-img {
+    /* width: 800px; */
+    /* 100% of the parent container */
+    width: 100%;
+    height: auto;
+}
+
+.like-btn {
+    font-size: 15px;
+    padding: 20px;
+    cursor: pointer;
+    /* please refer the parent element of this, 
+    so that the top,right,bottom,left is relative
+    to that parent element and you must set
+    the parent elements position to relative */
+    position: absolute;
+    /* top: 200px;
+    right: 50px; */
+    bottom: 50px;
+    right: 50px;
+}
+
+/* pseudo elements */
+h1::first-letter {
+    font-style: normal;
+    margin-right: 5px;
+}
+
+/* p::first-line {
+    color: red;
+} */
+
+/* adjacent sibiling selector */
+/* h3+p::first-line {
+    color: red;
+} */
+
+h2 {
+    /* background-color: orange; */
+    position: relative;
+}
+
+/* pseudo elements are by default inline elements */
+/* and we also combine the learnings of absolute positioning */
+h2::after {
+    content: "TOP";
+    background-color: yellow;
+    color: #444;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    right: -20px;
+}

@@ -59,9 +59,11 @@ p{
 ```
 
 # Order of learning
+- [css-html-basics](./udemy/html-css-course)
 - [CSS Cheat Sheet](./css-cheatsheet/)
 - [My Website](./mywebsite/)
 - [HTML5 Responsive Website MSP](./html5_responsive_website_msp/)
 - [HTML5 Responsive Website ACME](./html5_responsive_website_acme/)
 - [CSS FlexBox](./flexbox/)
 - [CSS GridLayout](./css-grid-layout)
+- [Netflix Landing Page](./netflix-landing-page)
