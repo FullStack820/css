@@ -26,15 +26,15 @@ body {
 
 .product::before {
     content: "SALE";
-    background-color: rgba(212, 21, 21, 0.986);
+    background-color: #ec2f2f;
     color: white;
     letter-spacing: 0.3em;
-    padding: 5px 15px;
+    padding: 7px 15px;
     position: absolute;
     font-weight: bold;
     font-size: 12px;
-    top: -20px;
-    left: -25px;
+    top: -17px;
+    left: -34px;
     display: inline-block;
 }
 
@@ -64,6 +64,8 @@ body {
 .more-info:link,
 .more-info:visited {
     color: black;
+    margin-bottom: 20px;
+    display: inline-block;
 }
 
 .more-info:hover,
@@ -160,4 +162,33 @@ body {
     background-color: rgb(144, 56, 56);
     display: inline-block;
     padding: 10px;
+}
+
+
+.color {
+    background-color: #000;
+    height: 22px;
+    width: 22px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.color-blue {
+    background-color: #2f6ee2;
+}
+
+.color-red {
+    background-color: #ec2f2f;
+}
+
+.color-yellow {
+    background-color: #f0bf1e;
+}
+
+.color-green {
+    background-color: #90cc20;
+}
+
+.color-brown {
+    background-color: #885214;
 }
