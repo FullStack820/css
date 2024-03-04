@@ -269,3 +269,68 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+/* CSS FLOATS */
+
+.author-img {
+  /* 
+  
+  the image is going to be taken out of document flow
+  just like an absolutely positioned element.
+  the other elements will float around it.
+  */
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  float: left;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+/* both the children (h1,nav) are floated and the parent header element
+will have a collapsing height. this is a known issue with the floats. */
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+/* what this pseudo element does, is to insert an element at the end of the
+   container (main-header) and that is exactly what we have been doing with empty div (clear)
+   and remember that pseudo element only exists if we define the content property.
+   so, you got to declare that along with clear property.
+   And one last property to be added is, the display and change it to inline-block.
+   because for the clear to work, it cannot be just an inline element.
+*/
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+
+article {
+  /* background-color: red; */
+  width: 70%;
+  float: left;
+}
+
+aside {
+  /* background-color: green; */
+  width: 25%;
+  float: right;
+}
+
+footer {
+  /* background-color: blue; */
+  clear: both;
+}

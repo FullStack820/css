@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+
+.container {
+    width: 825px;
+    margin: 50px auto;
+}
+
+
+/* PRODUCT INFORMATION */
+
+.product {
+    border: solid 5px black;
+    position: relative;
+
+}
+
+/* pseudo class */
+
+.product::before {
+    content: "SALE";
+    background-color: #ec2f2f;
+    color: white;
+    letter-spacing: 0.3em;
+    padding: 7px 15px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 12px;
+    top: -17px;
+    left: -34px;
+    display: inline-block;
+}
+
+.product-title {
+    text-align: center;
+    background-color: #f7f7f7;
+    text-transform: uppercase;
+    font-size: 22px;
+    /* move from inside & hence padding */
+    padding: 15px;
+}
+
+.price {
+    font-style: bold;
+    font-size: 1.5rem;
+}
+
+.shipping {
+    text-transform: uppercase;
+    font-style: bold;
+    color: hsla(0, 0%, 27%, 0.585);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.more-info:link,
+.more-info:visited {
+    color: black;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.more-info:hover,
+.more-info:active {
+    text-decoration: none;
+}
+
+/* PRODUCT DETAILS */
+
+.details-list {
+    list-style: square;
+    margin-left: 20px;
+}
+
+.details-title {
+    margin: 5px 0;
+    /* margin-top: 15px; */
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+
+.details-list li {
+    margin-bottom: 10px;
+}
+
+/* BUTTON */
+
+.add-cart {
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    padding: 15px;
+    border-top: 4px solid #000;
+
+}
+
+.add-cart:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.available-colors {
+    margin-top: 15px;
+}
+
+.available-colors .black {
+    color: black;
+    background-color: black;
+    display: inline-block;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+.available-colors .blue {
+    color: blue;
+    background-color: blue;
+    display: inline-block;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+.available-colors .red {
+    color: red;
+    background-color: red;
+    display: inline-block;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+.available-colors .orange {
+    color: orange;
+    background-color: orange;
+    display: inline-block;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+
+.available-colors .green {
+    color: lightgreen;
+    background-color: lightgreen;
+    display: inline-block;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+
+.available-colors .brown {
+    color: brown;
+    background-color: rgb(144, 56, 56);
+    display: inline-block;
+    padding: 10px;
+}
+
+
+/* .color {
+    background-color: #000;
+    height: 22px;
+    width: 22px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+*/
+
+
+.colors {
+    display: flex;
+    gap: 10px;
+}
+
+.color {
+    flex: 0 0 22px;
+    min-width: 22px;
+    height: 22px;
+}
+
+.color-black {
+    background-color: #000;
+}
+
+.color-blue {
+    background-color: #2f6ee2;
+}
+
+.color-red {
+    background-color: #ec2f2f;
+}
+
+.color-yellow {
+    background-color: #f0bf1e;
+}
+
+.color-green {
+    background-color: #90cc20;
+}
+
+.color-brown {
+    background-color: #885214;
+}
+
+.row {
+    display: flex;
+    gap: 25px;
+}
+
+/* 
+
+when you use flex: 1;, you're essentially saying that the flex item should take up all available space along the main axis 
+and be allowed to shrink and grow equally with other flex items. 
+This is commonly used in layouts where you want flex items to distribute space evenly within a flex container.
+
+*/
+
+
+.product-info {
+    flex: 1;
+    margin-top: 20px;
+}
+
+.product-details {
+    flex: 1;
+    margin-top: 20px;
+    /* margin-right: 40px; */
+}
+
+.product-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product {
+    display: grid;
+    width: 825px;
+    margin: 50px auto;
+    grid-template-columns: 250px 1fr 1fr;
+    grid-template-rows: 1fr 250px 1fr;
+    column-gap: 40px;
+}
+
+.product-title {
+    grid-column: 1 / -1;
+}
+
+.add-cart {
+    grid-column: 1 / -1;
+}

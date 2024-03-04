@@ -269,3 +269,73 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+/* CSS Flexbox */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.author {
+  margin-bottom: 0;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+.flex-container {
+  display: flex;
+  gap: 75px;
+  align-items: flex-start;
+}
+
+article {
+  flex: 1;
+  margin-bottom: 0px;
+}
+
+aside {
+  /* width will not work with flex box
+  because css flexbox will automatically
+  would like to shrink the elements.
+  therefore we would like to set the flex shrink to zero
+  
+  just the flex property would do that:-
+
+  flex: flex-grow flex-shrink flex-basis
+  
+  flex-grow: 0 (default is 0, won't allow you to grow)
+  flex-shrink: 1 (default is 1, will shrink as much as possible)
+  
+  */
+  flex: 0 0 300px;
+}
