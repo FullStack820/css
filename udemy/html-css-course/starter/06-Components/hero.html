@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnifood Hero Section</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Rubik', sans-serif;
+            color: #444;
+        }
+
+        header {
+            /* background-color: orangered; */
+            height: 100vh;
+            position: relative;
+
+            /* background-image: linear-gradient(red, blue); */
+            /* background-image: linear-gradient(to right, red, blue); */
+
+            /* linear-gradient is on top of the background image */
+            background-image: linear-gradient(#25252599, #25252599), url(hero.jpg);
+            background-size: cover;
+            color: #fff;
+        }
+
+        .header-container {
+            width: 1200px;
+            position: absolute;
+            /* background-color: violet; */
+
+            /* IN relation to the parent size */
+            left: 50%;
+            top: 50%;
+
+            /* IN relation to the element size */
+            transform: translate(-50%, -50%);
+        }
+
+        .header-container-inner {
+            width: 600px;
+        }
+
+        nav {
+            font-size: 18px;
+            font-weight: 700;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 32px;
+            /* background-color: green; */
+        }
+
+        h1 {
+            font-size: 52px;
+            margin-bottom: 32px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 48px;
+            line-height: 1.6;
+        }
+
+        .btn:link,
+        .btn:visited {
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+            background-color: #e67e22;
+            color: white;
+            display: inline-block;
+            padding: 16px 32px;
+            border-radius: 9px;
+        }
+
+        h2 {
+            font-size: 44px;
+            margin-bottom: 48px;
+        }
+
+        section {
+            margin: 96px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="container">
+            <div>LOGO</div>
+            <div>NAVIGATION</div>
+
+        </nav>
+
+        <div class="header-container">
+            <div class="header-container-inner">
+                <h1>A healthy meal delivered to your door every single day</h1>
+                <p>
+                    The smart 365-days-per-year food subscription that will make you
+                    eat healthy again. Tailored to your personal tastes and nutritional needs.
+                </p>
+                <a href="#" class="btn">Start eating well</a>
+            </div>
+        </div>
+
+    </header>
+    <section class="container">
+        <h2>Some random Heading</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem sint quia dignissimos minima reiciendis non
+            minus expedita ab pariatur magni corrupti sit eveniet corporis, animi placeat delectus quae mollitia, vel
+            ratione tenetur maiores aperiam dicta ipsam? Laudantium, a voluptates tempora earum, itaque numquam ad vitae
+            quos, distinctio consequuntur quaerat deleniti. Voluptate dignissimos, sunt libero voluptatibus maxime
+            voluptates tenetur in, magnam animi ipsum repudiandae, eaque eum fuga cum. Architecto inventore odio quos ea
+            ipsam cupiditate dolore consectetur sed perferendis quod quam tempore reiciendis repellat, modi ipsum
+            aspernatur. Ducimus ratione doloribus deserunt quos sequi eligendi architecto consequuntur suscipit nisi,
+            temporibus eum ipsa.</p>
+    </section>
+
+</body>
+
+</html>
