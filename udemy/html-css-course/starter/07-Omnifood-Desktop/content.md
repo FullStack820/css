@@ -119,10 +119,27 @@ Create account
 Sign in
 iOS app
 Android app
+
 About Omnifood
 For Business
 Cooking partners
 Careers
 Recipe directory
+
 Help center
 Privacy & terms
+
+
+## Sections
+
+- Logo + Navigation
+- Hero (Image + Headline/Summary)
+- Featured-In
+- How it Works
+- Meals + Diet Plans
+- Testimonials + Gallery
+- Pricing + Features
+- CTA (Call To Action)
+- Footer
+
+Design and Layout must follow the content.
